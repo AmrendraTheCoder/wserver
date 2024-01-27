@@ -19,7 +19,7 @@ app.get('/get-weather', (req, res) => {
     // handle success
     let city = response.data.location.name;
     let temp = response.data.current.temp_c;
-    res.send(`The temprature of your city - ${city} is ${temp}`);
+    res.send(`The temprature of your city ${city} is ${temp}`);
   })
   .catch(function (error) {
     // handle error
